@@ -1,97 +1,97 @@
 # Keylogger Script
 
-Este repositorio contiene un conjunto de scripts para capturar entradas de teclado en sistemas Linux y Windows. 
-El propósito de estos scripts es demostrar cómo se puede implementar un keylogger básico en diferentes entornos.
+This repository contains a set of scripts for capturing keyboard input on Linux and Windows systems. 
+The purpose of these scripts is to demonstrate how a basic keylogger can be implemented in different environments.
 
-# GitBook de `Keylogger Script`:
+# GitBook of `Keylogger Script`:
 
-URL = [Pincha aquí](https://dise0.gitbook.io/h4cker_b00k/tecnica-keylogger-automatizada/keylogger-script-automatizado-linux-y-windows)
+URL = [Click here](https://dise0.gitbook.io/h4cker_b00k/tecnica-keylogger-automatizada/keylogger-script-automatizado-linux-y-windows)
 
-## Contenido
+## Content
 
-- **capture_victim.py** y **server_host.py**: Scripts principales en Python para capturar entradas de teclado. Compatible con entornos gráficos y de terminal.
-- **requirements.sh**: Script para instalar las dependencias necesarias para ejecutar el script Python.
+- **capture_victim.py** and **server_host.py**: Core Python scripts for capturing keyboard input. Compatible with graphical and terminal environments.
+- **requirements.sh**: Script to install the necessary dependencies to run the Python script.
 
-## Instalación de Requisitos
+## Installation Requirements
 
 ### 1. `requirements.sh`
 
-El script `requirements.sh` se encarga de instalar las bibliotecas necesarias para ejecutar el script `Python`. Asegúrate de ejecutar este script con privilegios de `root`.
+The `requirements.sh` script is responsible for installing the necessary libraries to run the `Python` script. Make sure you run this script with `root` privileges.
 
-**Instrucciones para ejecutar `requirements.sh`:**
+**Instructions to run `requirements.sh`:**
 
-### 2. **Descargar o clonar el repositorio**:
+### 2. **Download or clone the repository**:
 
    ```bash
    git clone https://github.com/D1se0/keylogger_script.git
    cd keylogger_script
    ```
 
-## Hacer el script ejecutable:
+## Make the script executable:
 
  ```bash
  chmod +x requirements.sh
  ```
 
-## Ejecutar el script como root:
+## Run the script as root:
 
  ```bash
  sudo ./requirements.sh
  ```
 
-Este script instalará `pynput`, `keyboard`, y `colorama`, que son necesarios para el funcionamiento del script `Python`.
+This script will install `pynput`, `keyboard`, and `colorama`, which are necessary for the `Python` script to function.
 
-## Uso del Script
+## Use of the Script
 
 ### 3. `server_host.py`
 
-Este script recive las capturas de teclado por el script `capture_victim.py`. 
-Disponible para entorno grafico y terminal.
+This script receives the keycaps by the `capture_victim.py` script. 
+Available for graphical and terminal environment.
 
 ### 4. `capture_victim.py`
 
-Este script captura las entradas de teclado y las envía a un servidor especificado. Dependiendo del entorno, puede utilizar diferentes bibliotecas para capturar las entradas:
+This script captures keyboard input and sends it to a specified server. Depending on the environment, you can use different libraries to capture the inputs:
 
-Entorno Gráfico: Utiliza `pynput`.
-Entorno de Terminal: Utiliza `keyboard`.
+Graphical Environment: Use `pynput`.
+Terminal Environment: Use `keyboard`.
 
-## Para ejecutar el script:
+## To run the script:
 
-Asegúrate de que todas las dependencias estén instaladas (ver Instalación de Requisitos).
+Make sure all dependencies are installed (see Installation Requirements).
 
-## Configura el script:
+## Configure the script:
 
-Edita `capture_victim.py` y `server_host.py` para definir la dirección IP y el puerto del servidor al que se enviarán las entradas y capturas de teclado.
+Edit `capture_victim.py` and `server_host.py` to define the IP address and port of the server to which keystrokes and inputs will be sent.
 
-## Ejecuta el script en la maquina atacante:
+## Run the script on the attacking machine:
 
 ```bash
 python3 server_host.py
 ```
 
-## Ejecuta el script en la maquina victima:
+## Run the script on the victim machine:
 
 ```bash
 python3 capture_victim.py
 ```
 
-## Reverse Shell
+##ReverseShell
 
-Tambien a parte de proporcionar las capturas de teclado se crea una reverse shell con el sistema de la maquina victima mediante un `msfvenom` que tendremos que configurar acorde a los ajustes de los scripts.
-Tendremos que cargar en metasploit el modulo de `multi/handler` y configurarlo para estar a la escucha.
+Also, apart from providing the keyboard captures, a reverse shell is created with the system of the victim machine using a `msfvenom` that we will have to configure according to the settings of the scripts.
+We will have to load the `multi/handler` module into metasploit and configure it to listen.
 
-## Nota de Seguridad
+## Security Note
 
-Este script se proporciona con fines educativos. Usar un `keylogger` sin el permiso explícito del usuario es ilegal y éticamente incorrecto. 
-Asegúrate de tener siempre la autorización adecuada antes de ejecutar o distribuir software de captura de teclas.
+This script is provided for educational purposes. Using a keylogger without the user's explicit permission is illegal and ethically wrong. 
+Make sure you always have proper authorization before running or distributing keylogging software.
 
-## Contribuciones
+## Contributions
 
-Las contribuciones son bienvenidas. Si deseas mejorar el script o agregar nuevas características, siéntete libre de hacer un `pull request`.
+Contributions are welcome. If you want to improve the script or add new features, feel free to make a pull request.
 
-## Licencia
+## License
 
-Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
+This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Contacto
 
