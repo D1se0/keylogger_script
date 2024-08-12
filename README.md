@@ -1,11 +1,11 @@
 # Keylogger Script
 
+Este repositorio contiene un conjunto de scripts para capturar entradas de teclado en sistemas Linux y Windows. 
+El propósito de estos scripts es demostrar cómo se puede implementar un keylogger básico en diferentes entornos.
+
 # GitBook de `Keylogger Script`:
 
 URL = [Pincha aquí](https://dise0.gitbook.io/h4cker_b00k/tecnica-keylogger-automatizada/keylogger-script-automatizado-linux-y-windows)
-
-Este repositorio contiene un conjunto de scripts para capturar entradas de teclado en sistemas Linux y Windows. 
-El propósito de estos scripts es demostrar cómo se puede implementar un keylogger básico en diferentes entornos.
 
 ## Contenido
 
