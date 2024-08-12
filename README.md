@@ -19,7 +19,7 @@ El script `requirements.sh` se encarga de instalar las bibliotecas necesarias pa
 ### 2. **Descargar o clonar el repositorio**:
 
    ```bash
-   git clone https://github.com/tu_usuario/keylogger_script.git
+   git clone https://github.com/D1se0/keylogger_script.git
    cd keylogger_script
    ```
 
